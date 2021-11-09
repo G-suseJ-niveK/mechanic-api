@@ -1,0 +1,9 @@
+uvicorn==0.13.3
+fastapi==0.63.0
+pydantic==1.7.3
+typing==3.7.4.3
+mangum
+python-dotenv
+boto3
+pytz
+python-jose==3.1.0
