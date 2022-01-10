@@ -1,14 +1,13 @@
 from fastapi import APIRouter
-from controllers import LogApiResource
+from controllers import FourierResource
 
 router = APIRouter(
-    prefix="/api"
+    prefix="/fourier"
 )
 
 router.add_api_route("",
-  LogApiResource.post,
+  FourierResource.post,
   methods=['POST'],
   name="Documentacion",
-  response_model=str,
   tags=['Root']
 )

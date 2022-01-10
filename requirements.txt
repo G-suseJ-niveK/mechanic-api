@@ -6,4 +6,9 @@ mangum
 python-dotenv
 boto3
 pytz
-python-jose==3.1.0
+
+
+pandas
+scipy
+matplotlib
+numpy

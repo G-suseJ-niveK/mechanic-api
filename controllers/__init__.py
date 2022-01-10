@@ -6,7 +6,7 @@ from validators.root.request import TemplateApiInsertSchema
 # Resources
 from resources import full_name
 
-class LogApiResource(HTTPEndpoint):
+class FourierResource(HTTPEndpoint):
     @staticmethod
     async def post(item : TemplateApiInsertSchema):
         """
