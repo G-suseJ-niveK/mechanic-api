@@ -1,4 +1,5 @@
-from typing import Optional
+from datetime import time
+from typing import Optional, List
 from pydantic import BaseModel
 from configs.environment import Config
 import pytz
@@ -7,6 +8,6 @@ import pytz
 tz = pytz.timezone(Config.TIME_ZONE)
 
 class TemplateApiInsertSchema(BaseModel) :
-  name1 : Optional[str]
-  name2 : dict
-  name3 : str
+  time : float
+  count : int
+  data : List[dict]

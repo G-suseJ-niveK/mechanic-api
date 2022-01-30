@@ -20,8 +20,8 @@ app = FastAPI(
   version=Config.PROJECT_API_VERSION,
   debug=Config.DEBUG,
   default_response_class=ResponseJson,
-  docs_url= None if Config.DOCS_URL == 'None' else Config.DOCS_URL,
-  redoc_url= None if Config.REDOC_URL == 'None' else Config.DOCS_URL
+  docs_url= None if Config.DOCS_URL == None else Config.DOCS_URL,
+  redoc_url= None if Config.REDOC_URL == None else Config.REDOC_URL
 )
 
 app.add_middleware(

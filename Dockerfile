@@ -1,13 +1,12 @@
 FROM python:3.8
 
-WORKDIR /app/log-api
+WORKDIR /var/api
 
-ENV WORKDIR /app/log-api
+#ENV WORKDIR /app/log-api
 
 # Copiar fuente de Lambda
 COPY . .
 
-RUN apt-get -y update
 RUN python -m pip install --upgrade pip
 RUN python -m pip install uvicorn
 
