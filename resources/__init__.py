@@ -38,7 +38,7 @@ def get_fourier(time : str, count : str, data):
     list_f = list(F)
     lis_mk = list(M_gk)
 
-    return json.loads(json.dumps({'amplitud': list(data), 'timepo': list(n), 'frecuencia': list_f, 'amplitud_fft': lis_mk }, cls=NpEncoder))
+    return json.loads(json.dumps({'amplitud': list(data), 'tiempo': list(n), 'frecuencia': list_f, 'amplitud_fft': lis_mk }, cls=NpEncoder))
 
 
 def get_alert(amplitud : list, freceuncia : list):
